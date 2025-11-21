@@ -1,20 +1,25 @@
-import EstiloGlobal, { BotaoAdicionar, Cabecalho, Container, Footer } from "./styles";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import EstiloGlobal from "./styles";
+import Home from "./pages/Home";
+import Cadastro from "./pages/Cadastro";
+
+const rotas = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/novo",
+    element: <Cadastro />
+  }
+])
 
 function App() {
 
   return (
     <>
       <EstiloGlobal />
-      <Cabecalho>
-        <h1>Lista De Contatos</h1>
-      </Cabecalho>
-      <Container>
-        <p>Você não possui contatos registrados, clique no botão "+" para registrar seu primeiro contatos</p>
-        <BotaoAdicionar>+</BotaoAdicionar>
-      </Container>
-      <Footer>
-        <a target="_blank" href="https://github.com/CassianoBC">@Cassiano</a>
-      </Footer>
+      <RouterProvider router={rotas} />
     </>
   )
 }
