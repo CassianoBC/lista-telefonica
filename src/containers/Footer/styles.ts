@@ -6,7 +6,7 @@ export const Rodape = styled.footer`
     background-color: ${variaveis.corDeFundoSecundaria};
     padding: 2vh 0;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     text-align: center;
     

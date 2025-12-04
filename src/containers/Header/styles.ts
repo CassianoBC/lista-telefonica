@@ -6,6 +6,8 @@ export const Cabecalho = styled.header`
     padding: 5vh 0;
     text-align: center;
     color: ${variaveis.corTexto};
+    position: sticky;
+    top: 0;
 
     h1 {
         font-size: 50px;
