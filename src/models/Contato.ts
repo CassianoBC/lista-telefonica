@@ -12,4 +12,6 @@ class Contato {
     }
 }
 
+new Contato("Cassiano Borges", "Cassianocosta12357@gmail.com", "51998893255", 1);
+
 export default Contato;
