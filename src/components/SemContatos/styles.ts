@@ -7,4 +7,5 @@ export const Paragrafo = styled.p`
     justify-content: center;
     font-size: 36px;
     text-align: center;
+    padding-top: 240px;
 `
