@@ -2,7 +2,7 @@ import styled from "styled-components";
 import variaveis from "../../styles/variaveis";
 
 export const MainContainer = styled.main`
-    background-color: ${variaveis.corDeFundo};
+    background-color: #fff;
     height: 78vh;
 `
 
@@ -20,8 +20,9 @@ export const Form = styled.form`
 `
 
 export const Campo = styled.input`
-    background-color: #fff;
-    border: 1px solid #ccccc;
+    background-color: ${variaveis.corDeFundo};
+    color: #000;
+    border: 1px solid #000;
     width: 50%;
     padding: 15px;
     font-size: 16px;
